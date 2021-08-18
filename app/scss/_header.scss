@@ -49,6 +49,7 @@
     border-radius: 5px;
     background: $white;
     transform: translateX(-50%);
+    z-index: 999;
 
     a {
       display: block;
@@ -87,23 +88,8 @@
       }
     }
   }
-
-  &__cta {
-    font-size: $font-sm;
-    color: $white;
-    transition: opacity 300ms ease-in-out;
-
-    &:hover {
-      opacity: 0.75;
-    }
-  }
 }
 
-// Spacing
-.container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 // Superposition(Overlay)
 .overlay {
   opacity: 0;
