@@ -6,6 +6,11 @@
     text-align: left;
   }
   &__intro {
+    h2 {
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
+    }
     margin-bottom: 3.75rem;
     @include breakpoint-up(large) {
       width: 60%;
@@ -19,7 +24,6 @@
   }
 
   &__item {
-    border: 1px solid magenta;
     padding: 0.9375rem;
 
     @include breakpoint-up(medium) {
